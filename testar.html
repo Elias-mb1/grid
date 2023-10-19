@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styleg.css" />
+  </head>
+  <body>
+    <h2>Logga in</h2>
+    <div class="formcontainer">
+      <form action="https://httpbin.org/anything" method="post">
+        <div class="Username">
+          <label for="Username">Username</label>
+          <input maxlength="10" name="Name" type="text" />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input name="email" type="email" />
+        </div>
+
+        <div class="study">
+          <label for="Har du studerat javascript tidigare ?"
+            >Har du studerat javascript tidigare ?
+          </label>
+          <input type="checkbox" id="study" name="study" />
+
+          <label for="Har du studerat Html/Css tidigare ?"
+            >Har du studerat Html/Css tidigare ?</label
+          >
+          <input type="checkbox" id="language" name="language" />
+        </div>
+
+        <div class="language">
+          <label for="language">Välj dit favorit språk</label>
+          <select id="language" name="language">
+            <option value="javascript">javascript</option>
+            <option value="html/css">html/css</option>
+            <option value="Java">java</option>
+            <option value=".net">.net</option>
+          </select>
+        </div>
+
+        <div class="radio">
+          <p>Välj det alternativ du har mest kunskap inom?</p>
+
+            <input type="radio" id="html" name="fav_language" value="HTML" />  
+          <label for="html">HTML</label><br />
+            <input type="radio" id="css" name="fav_language" value="CSS" />  
+          <label for="css">CSS</label><br />
+           
+          <input
+            type="radio"
+            id="javascript"
+            name="fav_language"
+            value="JavaScript"
+          />
+            <label for="javascript">JavaScript</label>  
+        </div>
+
+        <div class="submit">
+          <button type="submit">Skicka</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
